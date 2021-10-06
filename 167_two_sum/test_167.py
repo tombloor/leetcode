@@ -45,3 +45,14 @@ def test_long_arr():
     result = solver.twoSum(nums, target)
 
     assert result == [len(nums) - 1, len(nums)]
+
+def test_long_arr_middle():
+    nums = [1] * 100000
+    nums = nums + [3, 7]
+    nums = nums + [10] * 100000
+    target = 10
+
+    solver = Solution()
+    result = solver.twoSum(nums, target)
+
+    assert result == [100001, 100002]
