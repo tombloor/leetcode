@@ -1,4 +1,4 @@
-from solution import Solution
+from solution_189 import Solution
 
 def test_length_1_rotate_0():
     nums = [1]

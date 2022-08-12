@@ -1,4 +1,4 @@
-from solution import Solution
+from solution_167 import Solution
 
 def test_example_1():
     nums = [2,7,11,15]

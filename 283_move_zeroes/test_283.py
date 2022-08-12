@@ -1,4 +1,4 @@
-from solution import Solution
+from solution_283 import Solution
 
 def test_length_3_3_zeroes():
     solver = Solution()

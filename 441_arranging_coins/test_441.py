@@ -1,4 +1,4 @@
-from solution import Solution
+from solution_441 import Solution
 
 def test_min():
     solver = Solution()

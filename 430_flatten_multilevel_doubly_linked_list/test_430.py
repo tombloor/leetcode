@@ -1,4 +1,4 @@
-from solution import Solution, Node
+from solution_430 import Solution, Node
 
 def result_to_arr(head):
     v = []

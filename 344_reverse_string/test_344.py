@@ -1,4 +1,4 @@
-from solution import Solution
+from solution_344 import Solution
 
 def test_hello():
     i = ['h', 'e', 'l', 'l', 'o']

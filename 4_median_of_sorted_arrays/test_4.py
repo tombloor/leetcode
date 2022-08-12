@@ -1,5 +1,4 @@
-from solution import Solution
-import pytest
+from solution_4 import Solution
 
 def test_ex_1():
     solver = Solution()
