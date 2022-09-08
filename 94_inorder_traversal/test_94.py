@@ -1,8 +1,8 @@
-from solution_637 import Solution, TreeNode
+from solution_94 import Solution, TreeNode
 
 def buildTree(arr):
     if len(arr) == 0:
-        return null
+        return None
 
     root = TreeNode(arr[0])
 
@@ -25,15 +25,17 @@ def buildTree(arr):
 
     return root
 
-
 def test_example1():
-    arr = [3,9,20,None,None,15,7]
-
+    root = buildTree([1,None,2,3])
     solver = Solution()
-
-    assert solver.averageOfLevels(buildTree(arr)) == [3, 14.5, 11]
+    assert solver.inorderTraversal(root) == [1, 3, 2]
 
 def test_example2():
-    arr = [3,9,20,15,7]
+    root = buildTree([])
     solver = Solution()
-    assert solver.averageOfLevels(buildTree(arr)) == [3,14.5,11]
+    assert solver.inorderTraversal(root) == []
+
+def test_example3():
+    root = buildTree([1])
+    solver = Solution()
+    assert solver.inorderTraversal(root) == [1]
